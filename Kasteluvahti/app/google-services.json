@@ -1,0 +1,34 @@
+{
+  "project_info": {
+    "project_number": "531627400851",
+    "project_id": "kasteluvahti",
+    "storage_bucket": "kasteluvahti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531627400851:android:434668390904a1baa53766",
+        "android_client_info": {
+          "package_name": "com.example.kasteluvahti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531627400851-8s97eubi0n4oqpnc7uolu33cp8ldrauc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531627400851-8s97eubi0n4oqpnc7uolu33cp8ldrauc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

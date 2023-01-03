@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/plantImageViewNewPlant"
+            android:layout_width="95dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/plant_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <EditText
+            android:id="@+id/editTextTextPlantName"
+            android:layout_width="295dp"
+            android:layout_height="66dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/plantNameTextView"
+            app:layout_constraintTop_toBottomOf="@+id/plantNameTextView" />
+
+        <EditText
+            android:id="@+id/editTextWateringFrequency"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/wateringFrequencyTextView"
+            app:layout_constraintTop_toBottomOf="@+id/wateringFrequencyTextView" />
+
+        <TextView
+        android:id="@+id/plantNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/plant_name"
+        app:layout_constraintStart_toStartOf="@+id/wateringFrequencyTextView"
+        app:layout_constraintTop_toBottomOf="@+id/plantImageViewNewPlant" />
+
+    <TextView
+        android:id="@+id/wateringFrequencyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/watering_frequency"
+        app:layout_constraintStart_toStartOf="@+id/lastTimeWateredTextView"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPlantName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lastTimeWateredTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/last_time_watered"
+        app:layout_constraintStart_toStartOf="@+id/calendarView"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWateringFrequency" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="302dp"
+        android:layout_height="316dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastTimeWateredTextView" />
+
+    <Button
+        android:id="@+id/addPlantButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="156dp"
+        android:text="@string/add_plant_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <Button
+        android:id="@+id/takePictureButton"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:text="Take a picture!"
+        app:layout_constraintBottom_toTopOf="@+id/plantNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plantImageViewNewPlant" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Kasteluvahti</string>
+    <string name="plant_name">Plant name:</string>
+    <string name="watering_frequency">Watering frequency in days:</string>
+    <string name="last_time_watered">Last time watered:</string>
+    <string name="add_plant_button">ADD PLANT</string>
+    <string name="details_button">DETAILS</string>
+    <string name="kasteluvahti">Kasteluvahti</string>
+    <string name="empty_not_saved">Plant not saved because it is empty.</string>
+    <string name="add_word"></string>
+    <string name="take_photo">Take photo</string>
+
+</resources>
